@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-API_KEY = 'AIzaSyCaUiFv6X4DuUx2Lk84_Pg1-j27NymfDHc'  # Replace this with your actual API key
+API_KEY = ''  # Replace this with your actual API key
 genai.configure(api_key=API_KEY)
 
 @app.route('/')
